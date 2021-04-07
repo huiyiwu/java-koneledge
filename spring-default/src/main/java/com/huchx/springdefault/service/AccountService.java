@@ -14,6 +14,7 @@ public class AccountService {
     AccountDao accountDao;
 
     public UserEntity getUserById() {
+        System.out.println("AccountService getUserById");
        return accountDao.getUserById();
     }
 

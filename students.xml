@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+  <student>
+    <name>huchx</name>
+    <url>www.baidu.com</url>
+  </student>
+  <student2>
+    <name>王金</name>
+    <url>www.google.com</url>
+  </student2>
+</students>

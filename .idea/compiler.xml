@@ -6,14 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-design-pattern" />
+        <module name="spring-boot-factory" />
+        <module name="mybatis" />
+        <module name="servlet" />
+        <module name="spring-boot-thread" />
+        <module name="spring-boot-annotation" />
+        <module name="spring-transcation" />
+        <module name="spring-boot-data-conversion" />
+        <module name="spring-boot-socket" />
+        <module name="spring-boot-maven" />
+        <module name="session" />
         <module name="spring-default" />
-        <module name="spring-boot-konwledge" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="spring-default" options="" />
-    </option>
   </component>
 </project>
