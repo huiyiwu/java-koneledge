@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-design-pattern" />
+        <module name="spring-boot-annotation" />
+        <module name="servlet" />
+        <module name="session" />
+        <module name="mybatis" />
+        <module name="spring-boot-thread" />
+        <module name="spring-boot-factory" />
+        <module name="spring-boot-socket" />
+        <module name="spring-boot-data-conversion" />
+        <module name="spring-boot-maven" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="conversation" target="1.8" />
+      <module name="spring-boot-network-model" target="1.5" />
+      <module name="spring-servlet" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-servlet" options="" />
+    </option>
+  </component>
+</project>
