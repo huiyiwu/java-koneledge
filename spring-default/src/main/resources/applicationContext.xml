@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="userEntity" class="com.huchx.springdefault.entity.UserEntity">
+        <property name="name" value="huchx"></property>
+    </bean>
+
+    <!--    调用无参构造函数-->
+    <bean id="user1" class="com.huchx.springdefault.entity.UserEntity" scope="prototype"></bean>
+
+    <!--    调用有参构造函数-->
+    <bean id="user2" class="com.huchx.springdefault.entity.UserEntity">
+        <constructor-arg name="name" type="java.lang.String" value="huchx2"></constructor-arg>
+        <constructor-arg name="age" type="java.lang.Integer" value="27"></constructor-arg>
+    </bean>
+
+    <bean id="factory" class="com.huchx.springdefault.entity.ObjectFactory"></bean>
+<!--    通过实例工厂方法创建-->
+    <bean id="user3" factory-bean="factory" factory-method="getInstance"></bean>
+<!--通过静态方法创建-->
+    <bean id="user4" class="com.huchx.springdefault.entity.ObjectFactory" factory-method="newInstance"></bean>
+
+<!--    Set方法注入值-->
+    <bean id="userDao" class="com.huchx.springdefault.dao.UserDao"></bean>
+    <bean id="userService" class="com.huchx.springdefault.service.UserService">
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+    <bean id="userAction" class="com.huchx.springdefault.action.UserAction">
+        <property name="userService" ref="userService"></property>
+    </bean>
+</beans>
