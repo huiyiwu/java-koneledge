@@ -3,26 +3,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.4.4</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
   <groupId>com.huchx</groupId>
-  <artifactId>spring-boot-knowledge</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>spring-boot-jpa</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <modules>
-    <module>spring-boot-thread</module>
-    <module>spring-boot-data-conversion</module>
-    <module>spring-boot-annotation</module>
-    <module>spring-boot-design-pattern</module>
-    <module>spring-boot-factory</module>
-    <module>spring-boot-socket</module>
-    <module>spring-boot-maven</module>
-    <module>spring-default</module>
-    <module>spring-transcation</module>
-    <module>spring-aop</module>
-      <module>spring-boot-jpa</module>
-  </modules>
 
-  <name>spring-boot-knowledge</name>
+  <name>spring-boot-jpa</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -32,6 +23,7 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -39,6 +31,26 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.47</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!--**** 阿里的数据源 ****-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.1.10</version>
+    </dependency>
+
   </dependencies>
 
   <build>

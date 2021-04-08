@@ -6,21 +6,27 @@
     <file type="web" url="file://$PROJECT_DIR$/mybatis" />
     <file type="web" url="file://$PROJECT_DIR$/servlet" />
     <file type="web" url="file://$PROJECT_DIR$/session" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-jsp" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-mybatis" />
     <file type="web" url="file://$PROJECT_DIR$/spring-servlet" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-
         <option value="$PROJECT_DIR$/spring-boot-data-conversion/pom.xml" />
         <option value="$PROJECT_DIR$/servlet/pom.xml" />
         <option value="$PROJECT_DIR$/session/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-helloword/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-jdbctemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/spring-boot-jsp/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-network-model/pom.xml" />
       </set>
     </option>
