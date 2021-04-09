@@ -6,6 +6,7 @@
     <file type="web" url="file://$PROJECT_DIR$/mybatis" />
     <file type="web" url="file://$PROJECT_DIR$/servlet" />
     <file type="web" url="file://$PROJECT_DIR$/session" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-distributed-transcation" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-jsp" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-mybatis" />
     <file type="web" url="file://$PROJECT_DIR$/spring-servlet" />
@@ -22,6 +23,7 @@
         <option value="$PROJECT_DIR$/spring-boot-jsp/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-jdbctemplate/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-distributed-transcation/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

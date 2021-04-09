@@ -23,6 +23,7 @@
         <module name="spring-aop" />
         <module name="spring-boot-data-conversion" />
         <module name="spring-default" />
+        <module name="spring-boot-distributed-transcation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,6 +32,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-distributed-transcation" options="-parameters" />
       <module name="spring-boot-helloword" options="-parameters" />
       <module name="spring-boot-jdbctemplate" options="-parameters" />
       <module name="spring-boot-jpa" options="-parameters" />
